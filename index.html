@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="" />
-    <title>BotanicShop</title>
-  </head>
-  <body class="dark-mode">
-    <div class="wapper">
-      <aside>
-        <header>
-          <h1 class="logo">BotanicShop</h1>
-          <nav>
-            <ul>
-              <li>
-                <i class="bi bi-hand-index-fill"></i>
-                <button class="boton-categoria">Todos los productos</button>
-              </li>
-              <li>
-                <i class="bi bi-hand-index-fill"></i
-                ><button class="boton-categoria">Huerta</button>
-              </li>
-              <li>
-                <i class="bi bi-hand-index-fill"></i
-                ><button class="boton-categoria">Grow</button>
-              </li>
-              <li>
-                <i class="bi bi-hand-index-fill"></i
-                ><button class="boton-categoria">Macetas</button>
-              </li>
-              <li>
-                <i class="bi bi-cart-fill"></i>
-                <a class="boton de carrito" href="./carrito.html">Carrito</a>
-                <span class="numerito">0</span>
-              </li>
-            </ul>
-          </nav>
-        </header>
-      </aside>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>BotanicShop</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <aside>
+      <header>
+        <h1 class="logo">BotanicShop</h1>
+      </header>
+      <nav>
+        <ul class="menu">
+          <li>
+            <button id="todos" class="boton-categoria boton-menu">
+              <i class="bi bi-hand-index"></i>Todos los productos
+            </button>
+          </li>
+          <li>
+            <button id="Huerta" class="boton-categoria boton-menu">
+              <i class="bi bi-hand-index"></i>Huerta
+            </button>
+          </li>
+          <li>
+            <button id="grow" class="boton-categoria boton-menu">
+              <i class="bi bi-hand-index"></i>Grow
+            </button>
+          </li>
+          <li>
+            <button id="macetas" class="boton-categoria boton-menu">
+              <i class="bi bi-hand-index"></i>Macetas
+            </button>
+          </li>
+          <li>
+            <a id="verCarrito" class="boton-carrito boton-menu" href="#"><i class="bi bi-cart-fill"></i>Carrito
+              <span class="numerito">0</span></a>
+          </li>
+        </ul>
+      </nav>
       <footer>
         <p class="texto-footer">® 2022 GiseShop</p>
       </footer>
-      <main>
-        <h2 class="titulo-principal">Todos los productos</h2>
-        <div id="contemedor de productos" class="contenedor-de productos">
-          <!--esto se va a rellenar-->
-        </div>
-      </main>
+    </aside>
+    <main>
+      <h2 class="titulo-principal">Todos los productos</h2>
+      <div id="contenedor-productos" class="contenedor-productos"></div>
+    </main>
+  </div>
+
+  <div>
+    <h2 style="text-align:center ;">Resumen de Compras</h2>
+    <br>
+    <div id="cards" class="row">
+
     </div>
-    <script src="main2.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="./js/main2.js"></script>
+</body>
+
 </html>

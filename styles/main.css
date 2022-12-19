@@ -1,0 +1,237 @@
+:root {
+  --clr-main: rgb(119, 203, 173);
+  --clr-verde: rgb(43, 133, 101);
+  --clr-white: rgb(235, 253, 244);
+  --clr-grey: rgba(211, 223, 217, 0.761);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+input,
+textarea,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: var(--clr-main);
+}
+
+aside {
+  padding: 2rem;
+  padding-right: 0;
+  color: var(--clr-white);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bi-hand-index {
+  transform: rotate(90deg);
+}
+
+.boton-menu {
+  background-color: transparent;
+  border: 0;
+  color: var(--clr-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  gap: 1rem;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.boton-menu:active {
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  border-top-left-radius: 1rem;
+}
+
+.boton-carrito {
+  margin-top: 2rem;
+}
+
+.numerito {
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  padding: 0.25rem;
+  border-radius: 0.24rem;
+}
+
+.texto-footer {
+  color: gray;
+  font-size: 0.85rem;
+}
+
+main {
+  background-color: var(--clr-white);
+  margin: 1rem;
+  margin-left: 0rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.titulo-principal {
+  color: var(--clr-main);
+  margin-bottom: 2rem;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.producto-imagen {
+  max-width: 100%;
+  height: 300px;
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.detalle {
+  background-color: var(--clr-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.productos-titulo {
+  font-size: 1rem;
+}
+.producto-agregar {
+  color: black;
+  background-color: var(--clr-white);
+  border-radius: 1rem;
+  width: 100px;
+  font-size: 1rem;
+  margin-top: 10px;
+  width: 250px;
+  font-weight: bold;
+  padding: 0.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid var (--clr-white);
+  margin-bottom: 5px;
+}
+
+.producto-agregar:hover {
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  transition: 0, 2s;
+}
+
+/** carrito vacio*/
+
+.contenedor-carrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.carrito-vacio {
+  color: var(--clr-main);
+  display: none;
+}
+
+.carrito-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.carrito-producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-grey);
+  color: var(--clr-verde);
+  padding: 0, 5rem;
+  border-radius: 1rem;
+  width: 1000px;
+  height: 100px;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.imagen {
+  width: 4rem;
+  border-radius: 1rem;
+}
+
+.small {
+  font-size: 0.75;
+}
+
+.carrito-producto_eliminar {
+  border: 0;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+}
+
+.carrito-acciones-vaciar {
+  border: 0;
+  background-color: var(--clr-grey);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.carrito-accidones_comprar {
+  border: 0;
+  background-color: var(--clr-main);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* creo una clase para todo lo que vayamos a ocultar*/
+
+.disabled {
+  display: none;
+}

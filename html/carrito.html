@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>BotanicShop</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <header>
+          <h1 class="logo">BotanicShop</h1>
+        </header>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="boton-menu boton-carrito active" href="./index.html">
+                <i class="bi-arrow-return-left"></i>Seguir comprando</a
+              >
+            </li>
+            <li>
+              <a class="boton-carrito boton-menu"
+                ><i class="bi bi-cart-fill"></i>Carrito
+                <span class="numerito">0</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <footer>
+          <p class="texto-footer">® 2022 GiseShop</p>
+        </footer>
+      </aside>
+      <main>
+        <h2 class="titulo-principal">Carrito</h2>
+
+        <div class="contenedor-carrito">
+          <div class="contenedor-productos disabled">
+            <div class="carrito-productos disabled">
+              <div class="carrito-producto">
+                <img class="imagen" src="./img/albahaca.webp" alt="" />
+                <div class="carrito-producto_titulo">
+                  <small class="small">Tiutlo</small>
+                  <h3>Albahaca</h3>
+                </div>
+                <div class="carrito-producto_cantidad">
+                  <small> Cantidad</small>
+                  <p>1</p>
+                </div>
+                <div class="carrito-producto-precio">
+                  <small>Precio</small>
+                  <p>$134</p>
+                </div>
+                <div class="carrito-producto-suntotal">
+                  <small>Subtotal</small>
+                  <p>$134</p>
+                </div>
+                <button class="carrito-producto_eliminar">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </div>
+              <div class="carrito-producto">
+                <img class="imagen" src="./img/apio.webp" alt="" />
+                <div class="carrito-producto_titulo">
+                  <small class="small">Tiutlo</small>
+                  <h3>Apio</h3>
+                </div>
+                <div class="carrito-producto_cantidad">
+                  <small> Cantidad</small>
+                  <p>1</p>
+                </div>
+                <div class="carrito-producto-precio">
+                  <small>Precio</small>
+                  <p>$134</p>
+                </div>
+                <div class="carrito-producto-suntotal">
+                  <small>Subtotal</small>
+                  <p>$134</p>
+                </div>
+                <button class="carrito-producto_eliminar">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </div>
+            </div>
+            <div class="carrito-acciones">
+              <div class="carrito-acciones_izquierda">
+                <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+              </div>
+              <div class="carrito-acciones_derecha">
+                <div class="carrito-acciones-total">
+                  <p>Total:</p>
+                  <p id="total">$3000</p>
+                </div>
+                <button class="carrito-accidones_comprar">Comprar ahora</button>
+              </div>
+            </div>
+            <p class="carrito-comprado disabled">
+              Muchas gracias por tu compra
+              <i class="bi bi-emoji-laughing-fill"></i>
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../js/main2.js"></script>
+  </body>
+</html>
